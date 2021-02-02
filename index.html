@@ -3,14 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- main css-->
     <link rel="stylesheet" href="./styles/styles.css">
+
+    <!-- bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 
+    <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Hachi+Maru+Pop&family=Pacifico&family=Roboto&display=swap" rel="stylesheet">
 
-    <title>landing page</title>
+    <!-- animate on scroll-->
+    <link href=”https://unpkg.com/aos@2.3.1/dist/aos.css" rel=”stylesheet”>
+
+    <title>Adidas Skateboarding</title>
 </head>
 <body>
     <header id="header">
@@ -36,20 +42,39 @@
         <img id="splash" class="img-fluid" src="./images/splash.jpg" alt="Responsive image">
     </div>
     
-    <div class=" container img-fluid text-left">
-        <div class="row">
-            <div class="col-sm-8">
+
+    <!-- about section -->
+    <div id="about" class=" container container-fluid img-fluid ">
+        <div id="about-container" class="row" data-aos="fade-right">
+            <div class="col-sm-8 text-left" id="about-title">
                 <h1>IT IS ALL ABOUT SPORT</h1>
                 <br><br>
                 <h5>This is where we come from, everything we do is rooted in sport. And sport plays an increasingly important role in more and more people’s lives, on and off the field of play. Sport is central to every culture and society and is core to an individual’s health and happiness. Therefore, we believe that, through sport, we have the power to change lives. This core belief guides the way we run our company, how we work with our partners, how we create our products, and how we engage with our consumers.</h5>
             </div>
+            
+            <div class="col-sm-4 img-fluid">
+                <img src="./images/about-4.jpg" id="about-img" alt="about-2">
+            </div>
+        </div>
 
-            <div class="col-sm-4">
-
+        <div id="about-container" class="row" data-aos="fade-left">
+            <div class="col-sm-4 img-fluid">
+                <img src="./images/about-1.jpg" id="about-img" alt="about-2">
+            </div>
+            
+            <div class="col-sm-8 text-right" id="about-title">
+                <h1>WE PLAY TO WIN</h1>
+                <br><br>
+                <h5>Athletes will not settle for average. And neither do we. We have a clear mission: To be the best sports company in the world. Every day, we come to work to create and sell the best sports and fitness products in the world, and to offer the best service and consumer experience – and to do it all in a sustainable way. To successfully do that, we focus entirely on our authentic sports brands as they connect and engage with our consumers.</h5>
             </div>
         </div>
         
     </div>
     
+    <!-- animate on scroll -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </body>
 </html>
